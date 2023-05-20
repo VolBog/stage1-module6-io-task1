@@ -30,7 +30,7 @@ public class FileReader {
             profile.setEmail(map.get("Email"));
             profile.setPhone(Long.parseLong(map.get("Phone")));
         } catch (IOException e) {
-            System.out.println("Something went wrong");
+            return null;
         }
         return profile;
     }
